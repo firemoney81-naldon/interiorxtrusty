@@ -14,8 +14,10 @@
 <meta name="twitter:title" content="학원인테리어비용"/>
 <meta name="twitter:url" content="/"/>
 <meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
+<meta name="google-site-verification" content="Ch1yWk0osDMWz04XNTZ04nhF8jCo1Td789Q2Swikg_U" />
+<meta name="naver-site-verification" content="a1dd03aff5e8a39964fee7dbc03ac2014cfe2da4" />
 
-
+	
 <meta name="subject" content="학원인테리어비용" />
 <meta name="publisher" content="학원인테리어비용" />
 <meta name="Other Agent" content="학원인테리어비용" />
@@ -687,9 +689,9 @@
       const second = String(kstDate.getSeconds()).padStart(2, '0');
 
       // YYYY-MM-DD 형식 (footer 보여주기용)
-      const formattedDate = 학원인테리어비용${year}-${month}-${day}학원인테리어비용;
+      const formattedDate = `${year}-${month}-${day}`;
       // ISO 8601 형식 (검색엔진이 가장 좋아하는 표준 포맷)
-      const isoDateTime = 학원인테리어비용${year}-${month}-${day}T${hour}:${minute}:${second}+09:00학원인테리어비용;
+      const isoDateTime = `${year}-${month}-${day}T${hour}:${minute}:${second}+09:00`;
       
       return { year, formattedDate, isoDateTime };
     }
@@ -743,7 +745,7 @@
     // 3. SEO 메타 태그 업데이트 (Naver/Google 공통)
     // ----------------------------------------------------------------------
     function setMetaTag(attrType, attrName, content) {
-      let selector = 학원인테리어비용meta[${attrType}="${attrName}"]학원인테리어비용;
+      let selector = `meta[${attrType}="${attrName}"]`;
       let meta = document.querySelector(selector);
       if (!meta) {
         meta = document.createElement('meta');
@@ -764,7 +766,7 @@
       setMetaTag('name', 'date', data.formattedDate);
 
       // (D) 저작권 정보 갱신 (네이버 소유 확인 시 참고)
-      setMetaTag('name', 'copyright', 학원인테리어비용${data.year} ${document.title}학원인테리어비용);
+      setMetaTag('name', 'copyright', `${data.year} ${document.title}`);
     }
 
     // ----------------------------------------------------------------------
@@ -802,7 +804,6 @@
     updateJsonLd(timeData);
   })();
 </script>
-
 
 
 
